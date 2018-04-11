@@ -1,0 +1,19 @@
+{
+  "name": "uniqly-addphoto-ak",
+  "version": "1.0.0",
+  "description": "sharing photo model for uniqly",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akhtam/uniqly-product-Ak.git"
+  },
+  "author": "Akhtam Ismatov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akhtam/uniqly-product-Ak/issues"
+  },
+  "homepage": "https://github.com/Akhtam/uniqly-product-Ak#readme"
+}
