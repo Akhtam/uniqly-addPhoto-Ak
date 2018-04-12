@@ -6,8 +6,12 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h2>react connected</h2>
+      <div className="container">
+        <div className="banner">
+          <div className="main-text">
+            <h1>SHARE YOUR STYLE #UNIQLYFEWEAR</h1>
+          </div>
+        </div>
       </div>
     );
   }
