@@ -11,9 +11,12 @@ class Carousel extends React.Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
       slidesToShow: 4,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2500,
+      autoplaySpeed: 2500,
+      cssEase: "linear"
     };
 
     return(
