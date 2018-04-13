@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from './carousel.jsx'
 
 class App extends React.Component {
   constructor() {
@@ -13,17 +14,9 @@ class App extends React.Component {
             <a className="addbtn" href="#"> <span className="afoto">ADD A PHOTO</span></a>
             <a className="gallery-view addbtn" href="#"> <span className="afoto">VIEW GALLERY</span></a>
           </div>
-
         </div>
-        <div className="slider-body">
-          <div className="slider-box">
-            <ul className="slider">
-              <li><img src="https://placeimg.com/400/200/any" /></li>
-              <li><img src="https://placeimg.com/400/200/people" /></li>
-              <li><img src="https://placeimg.com/400/200/any" /></li>
-              <li><img src="https://placeimg.com/400/200" /></li>
-            </ul>
-          </div>
+        <div className="slider-box">
+          <Carousel />
         </div>
       </div>
     )
