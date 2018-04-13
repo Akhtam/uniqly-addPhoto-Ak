@@ -6,20 +6,22 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="ppa">
         <div className="banner">
-          <h1>SHARE YOUR STYLE #UNIQLYFEWEAR</h1>
+          <h2>SHARE YOUR STYLE #UNIQLYFEWEAR</h2>
           <div className="addphoto">
-            <a href="#">Add Photo</a>
+            <a className="addbtn" href="#"> <span className="afoto">ADD A PHOTO</span></a>
+            <a className="gallery-view addbtn" href="#"> <span className="afoto">VIEW GALLERY</span></a>
           </div>
+
         </div>
         <div className="slider-body">
           <div className="slider-box">
             <ul className="slider">
-              <li><img src="pic1.jpeg" /></li>
-              <li><img src="pic2.jpeg" /></li>
-              <li><img src="pic3.jpeg" /></li>
-              <li><img src="pic4.jpeg" /></li>
+              <li><img src="https://placeimg.com/400/200/any" /></li>
+              <li><img src="https://placeimg.com/400/200/people" /></li>
+              <li><img src="https://placeimg.com/400/200/any" /></li>
+              <li><img src="https://placeimg.com/400/200" /></li>
             </ul>
           </div>
         </div>
