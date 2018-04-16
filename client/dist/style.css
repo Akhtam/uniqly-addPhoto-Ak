@@ -38,3 +38,13 @@ ul {
 .slider-body {
   margin-bottom: 60px;
 }
+
+.slider-box {
+  display: flex;
+  flex-wrap: nowrap;
+
+  width: 100%;
+}
+.carousel-box {
+  position: absolute;
+}

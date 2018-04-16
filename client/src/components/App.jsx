@@ -15,7 +15,7 @@ class App extends React.Component {
             <a className="gallery-view addbtn" href="#"> <span className="afoto">VIEW GALLERY</span></a>
           </div>
         </div>
-        <div className="slider-box">
+        <div className="carousel-box">
           <Carousel />
         </div>
       </div>
