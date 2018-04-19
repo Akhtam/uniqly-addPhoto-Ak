@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Carousel from './components/carousel.jsx';
 import $ from 'jquery';
+import unsplashPhotos from './dummy.js';
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       photos: 'd'
     }
@@ -16,7 +17,6 @@ class App extends React.Component {
       type: 'GET',
       url: '/api/foto',
       success: function(data) {
-        console.log(data);
         _this.setState({
           photos: data
         });
@@ -37,10 +37,10 @@ class App extends React.Component {
           </div>
         </div>
         <div className="carousel-box">
-          <Carousel />
+          <Carousel inf={unsplashPhotos}/>
         </div>
       </div>
     )
   }
 }
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'));

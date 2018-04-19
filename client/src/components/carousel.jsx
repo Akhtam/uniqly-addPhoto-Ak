@@ -1,49 +1,35 @@
 import React from 'react';
 import Slider from 'react-slick';
-import unsplashPhotos from '../dummy.js';
-console.log(unsplashPhotos);
-class Carousel extends React.Component {
 
-  constructor(props){
+class Carousel extends React.Component {
+  constructor(props) {
     super(props);
   }
+
   render() {
+    const dummyData = this.props.inf;
     const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1
-  };
-    return(
-        <div className="slider-box">
-          <Slider {...settings} >
-
-            <div>
-              <h3><img src="https://source.unsplash.com/t3zrEm88ehc/350x350" /></h3>
-            </div>
-            <div>
-              <h3><img src="https://source.unsplash.com/rnH5ITofDAM/350x350" /></h3>
-            </div>
-            <div>
-              <h3><img src="https://source.unsplash.com/iJHQetVqCzk/350x350" /></h3>
-            </div>
-            <div>
-              <h3><img src="https://source.unsplash.com/72HbGy4lj54/350x350" /></h3>
-            </div>
-            <div>
-              <h3><img src="https://source.unsplash.com/t3zrEm88ehc/350x350" /></h3>
-            </div>
-            <div>
-              <h3><img src="https://source.unsplash.com/t3zrEm88ehc/350x350" /></h3>
-            </div>
-            <div>
-              <h3><img src="https://source.unsplash.com/t3zrEm88ehc/350x350" /></h3>
-            </div>
-
-          </Slider>
-        </div>
-
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1
+    };
+    return (
+      <div className="slider-box">
+        <Slider {...settings}>
+          {dummyData.map((data, indx) => {
+            return (
+              <div className="image" key={indx}>
+                <h3>
+                  <img src={`${data.imageUrl}/330x350`} />
+                </h3>
+                <p className="text">{`@${data.name}`}</p>
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
     );
   }
 }
