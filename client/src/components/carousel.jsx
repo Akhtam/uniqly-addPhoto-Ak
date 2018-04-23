@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-const Carousel = (props) {
+const Carousel = (props) => {
   const dummyData = props.inf;
   const settings = {
     dots: true,
