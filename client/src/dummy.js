@@ -1,4 +1,3 @@
-
 const unsplashPhotos = [
   {
     name: "mehdizadeh",
@@ -57,8 +56,6 @@ const unsplashPhotos = [
     imageUrl: "https://source.unsplash.com/X6aSVG58d2o",
     description: "Frater et T. Nam adhuc, meo fortasse vitio, quid ego quaeram non perspicis. Quamquam haec quidem praeposita recte et reiecta dicere licebit."
   },
-
-
-
 ];
+
 export default unsplashPhotos
