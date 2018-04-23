@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Carousel from './components/carousel.jsx';
 import $ from 'jquery';
+
+import Carousel from './components/carousel.jsx';
 import unsplashPhotos from './dummy.js';
 
 class App extends React.Component {
@@ -24,7 +25,7 @@ class App extends React.Component {
       },
       error: function(err) {
         console.log(err);
-      }
+      },
     });
   }
 
