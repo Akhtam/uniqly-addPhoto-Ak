@@ -33,7 +33,7 @@ class App extends React.Component {
     return (
       <div className="ppa">
         <div className="banner">
-          <h2>SHARE YOUR STYLE #UNIQLYFEWEAR</h2>
+          <h2 id="carousel-header">SHARE YOUR STYLE #UNIQLYFEWEAR</h2>
           <div className="addphoto">
             <button className="addbtn"> <span className="afoto">ADD A PHOTO</span></button>
             <button className="gallery-view addbtn"> <span className="afoto">VIEW GALLERY</span></button>
